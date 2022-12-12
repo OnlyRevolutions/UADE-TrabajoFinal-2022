@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/UADE-TrabajoFinal/Scenes/Development Scenes/LoadingScreen.unity
+    guid: 888394d52616e5e42b3b54c3f2bbd3eb
+  - enabled: 1
     path: Assets/UADE-TrabajoFinal/Scenes/Development Scenes/DevelopmentScene_MainMenu.unity
     guid: 9d15f77532105c843971717277a9b9e1
   - enabled: 1
@@ -29,7 +32,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/UADE-TrabajoFinal/Scenes/Development Scenes/DevelopmentScene_Level_5.unity
     guid: 88df82f1bdf147a49903e1e195b82ab6
-  - enabled: 1
-    path: Assets/UADE-TrabajoFinal/Scenes/Development Scenes/LoadingScreen.unity
-    guid: 888394d52616e5e42b3b54c3f2bbd3eb
   m_configObjects: {}
