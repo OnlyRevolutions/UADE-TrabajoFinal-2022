@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 3b21cca21e0ea29419d6dbac9e75953b
+labels:
+- Character
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: animations
+  assetBundleVariant: characters

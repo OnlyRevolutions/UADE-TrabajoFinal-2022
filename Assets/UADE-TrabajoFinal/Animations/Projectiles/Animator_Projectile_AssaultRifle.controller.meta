@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: a0a9152de63fbde43a6f1d23b40118cd
+labels:
+- Prop
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: animations
+  assetBundleVariant: projectiles

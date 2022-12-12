@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2a2f265af76d7e24788d45880a99c865
+labels:
+- Weapon
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: animations
+  assetBundleVariant: weapons

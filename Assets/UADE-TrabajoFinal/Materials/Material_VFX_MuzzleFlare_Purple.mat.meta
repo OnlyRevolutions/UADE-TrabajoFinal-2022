@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: e43e5362bd9e34d48a1497b5fc229fab
+labels:
+- Effect
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: vfx

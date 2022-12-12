@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1890697580769087372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890697580769087370}
+  - component: {fileID: 1890697580769087373}
+  m_Layer: 0
+  m_Name: ProgressManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890697580769087370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890697580769087372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890697580769087373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890697580769087372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b750a2eeaf961d849b062b5e56d3bef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Naomi: {fileID: 114873785417298432, guid: cfac65e9a75efbe4ca0d9596db928aa8, type: 3}
+  Jules: {fileID: 114873785417298432, guid: f6b3b847864549b498262ff6db796995, type: 3}
+  Scenes:
+  - SceneName: DevelopmentScene_Level_1
+    LevelComplete: 0
+    LevelUnlocked: 1
+    MaxStars: 3
+    CollectedStars: 000000
+  - SceneName: DevelopmentScene_Level_2
+    LevelComplete: 0
+    LevelUnlocked: 0
+    MaxStars: 3
+    CollectedStars: 000000
+  - SceneName: DevelopmentScene_Level_3
+    LevelComplete: 0
+    LevelUnlocked: 0
+    MaxStars: 3
+    CollectedStars: 000000
+  - SceneName: DevelopmentScene_Level_4
+    LevelComplete: 0
+    LevelUnlocked: 0
+    MaxStars: 3
+    CollectedStars: 000000
+  - SceneName: DevelopmentScene_Level_5
+    LevelComplete: 0
+    LevelUnlocked: 0
+    MaxStars: 3
+    CollectedStars: 000000
+  CreateSaveGameBtn: 0
