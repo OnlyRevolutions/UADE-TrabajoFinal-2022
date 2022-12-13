@@ -6073,7 +6073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 12
+  Radius: 15
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -6132,7 +6132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   ComparisonMode: 1
-  Distance: 13
+  Distance: 16
 --- !u!114 &2437845140208405313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6380,7 +6380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LootMode: 0
-  GameObjectToLoot: {fileID: 0}
+  GameObjectToLoot: {fileID: 8090616255464684598, guid: a7f63b77a7028e64780197f2bb43780b,
+    type: 3}
   LootTable:
     ObjectsToLoot: []
     WeightsTotal: 0

@@ -21323,16 +21323,20 @@ MonoBehaviour:
   DebugActive: 0
   Sfx: {fileID: 0}
   RandomSfx:
-  - {fileID: 8300000, guid: 1997152b7f92b2e4a953876e23b4df0d, type: 3}
-  - {fileID: 8300000, guid: 667190ddabda9d44daef234478e7d1fb, type: 3}
-  - {fileID: 8300000, guid: 604afe68fb9a2254db88b8b2a45dd528, type: 3}
-  - {fileID: 8300000, guid: 150404ae36d415c449df38522611c49b, type: 3}
-  - {fileID: 8300000, guid: b58d8ec52caa8904aae65edfad18cf75, type: 3}
+  - {fileID: 8300000, guid: 0c91640852d74fb45b256c51a0974382, type: 3}
+  - {fileID: 8300000, guid: b1c1730509be82847aef035c76b764d7, type: 3}
+  - {fileID: 8300000, guid: 8cc77fe668a5e2140b95866826fe0d05, type: 3}
+  - {fileID: 8300000, guid: 77ddcf2ebfcefdd478e21b2fcb43d7c1, type: 3}
+  - {fileID: 8300000, guid: 7a7c50d5a9d61a541b6002e2d03b804c, type: 3}
+  - {fileID: 8300000, guid: e2294ee9bb92b7547a267ed67caf03e8, type: 3}
+  - {fileID: 8300000, guid: 21ce44f57875e814e880dd148a4e88bd, type: 3}
+  - {fileID: 8300000, guid: 4dbc21325f636034a9a8dda5fb7e54c9, type: 3}
+  - {fileID: 8300000, guid: 87f76c47bafb71641960298b5547ea7f, type: 3}
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
+  MinVolume: 8
   MaxVolume: 1
   MinPitch: 1
   MaxPitch: 1
