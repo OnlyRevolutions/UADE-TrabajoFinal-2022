@@ -42366,7 +42366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   settingsSo: {fileID: 11400000, guid: 07ea3ff88e1ecb84d91f58aa804badc6, type: 2}
-  AudioSourcePoolSize: 10
+  AudioSourcePoolSize: 150
   PoolCanExpand: 1
 --- !u!4 &1734572837
 Transform:
