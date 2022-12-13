@@ -132,7 +132,7 @@ MonoBehaviour:
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
-        Chance: 50
+        Chance: 25
         DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
@@ -5614,6 +5614,7 @@ GameObject:
   - component: {fileID: -2815480233103766489}
   - component: {fileID: -2438860106264861630}
   - component: {fileID: 1813999833}
+  - component: {fileID: -8676562443831929222}
   m_Layer: 13
   m_Name: Enemy_Patrol_Elite
   m_TagString: Enemy
@@ -5989,6 +5990,7 @@ MonoBehaviour:
       - {fileID: 2437789940715566383}
       - {fileID: 1813999833}
       - {fileID: -4770721992176219564}
+      - {fileID: -8676562443831929222}
     Transitions:
       array:
       - Decision: {fileID: 2439401147963574603}
@@ -6102,7 +6104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: 
   ComparisonMode: 1
-  Distance: 9
+  Distance: 13
 --- !u!114 &2438640544995507925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6116,7 +6118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 8
+  Radius: 12
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -6158,13 +6160,13 @@ MonoBehaviour:
   TimeScale: 0
   HealthBarPrefab: {fileID: 0}
   TargetProgressBar: {fileID: 0}
-  Size: {x: 1.5, y: 0.4}
+  Size: {x: 1.75, y: 0.45}
   BackgroundPadding: {x: 0.05, y: 0.05}
   InitialRotationAngles: {x: 0, y: 0, z: 0}
   ForegroundColor:
     serializedVersion: 2
-    key0: {r: 0.735849, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0.16001588, b: 0, a: 1}
+    key0: {r: 0.8, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6172,7 +6174,7 @@ MonoBehaviour:
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 65535
+    ctime1: 65342
     ctime2: 0
     ctime3: 0
     ctime4: 0
@@ -6192,7 +6194,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   DelayedColor:
     serializedVersion: 2
-    key0: {r: 1, g: 0.41178104, b: 0, a: 1}
+    key0: {r: 0.87843144, g: 0.47058827, b: 0, a: 1}
     key1: {r: 1, g: 0.6604273, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -6221,8 +6223,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   BorderColor:
     serializedVersion: 2
-    key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6250,8 +6252,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   BackgroundColor:
     serializedVersion: 2
-    key0: {r: 0.3207547, g: 0, b: 0, a: 1}
-    key1: {r: 0.3773585, g: 0, b: 0, a: 1}
+    key0: {r: 0.2392157, g: 0, b: 0, a: 1}
+    key1: {r: 0.40000004, g: 0, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6340,9 +6342,9 @@ MonoBehaviour:
   NestDrawnHealthBar: 0
   Billboard: 0
   InstantiatedOnDeath: {fileID: 0}
-  HealthBarOffset: {x: 0, y: 2.5, z: 0}
+  HealthBarOffset: {x: 0, y: 1.6, z: 0}
   AlwaysVisible: 0
-  DisplayDurationOnHit: 1
+  DisplayDurationOnHit: 2
   HideBarAtZero: 1
   HideBarAtZeroDelay: 0
 --- !u!114 &2438059506377447113
@@ -6520,6 +6522,22 @@ MonoBehaviour:
   FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
+--- !u!114 &-8676562443831929222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2325596686016990461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47557c9dd44293a41bc6710b083332de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 0
+  Label: 
+  UseMinimumXDistance: 1
+  MinimumXDistance: 1
 --- !u!1 &2325619290637431437
 GameObject:
   m_ObjectHideFlags: 0
