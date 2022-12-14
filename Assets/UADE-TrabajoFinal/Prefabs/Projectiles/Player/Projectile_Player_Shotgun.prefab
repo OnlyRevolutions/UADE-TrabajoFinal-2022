@@ -20171,7 +20171,7 @@ MonoBehaviour:
   DebugActive: 0
   Channel: 0
   Intensity: 1
-  Value: 30
+  Value: 30 dmg
   UseIntensityAsValue: 0
   ForceColor: 1
   AnimateColorGradient:

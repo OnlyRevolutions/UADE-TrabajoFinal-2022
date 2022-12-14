@@ -5201,7 +5201,7 @@ MonoBehaviour:
   MovementMultiplier: 0.5
   PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
-  RecoilForce: 10
+  RecoilForce: 50
   Animators:
   - {fileID: 95707169878565408}
   PerformAnimatorSanityChecks: 0
@@ -11618,7 +11618,7 @@ MonoBehaviour:
   ResetShakerValuesAfterShake: 1
   ResetTargetValuesAfterShake: 1
   RemapIntensityZero: 0
-  RemapIntensityOne: 1
+  RemapIntensityOne: 0.05
   Intensity:
     serializedVersion: 2
     m_Curve:

@@ -21453,7 +21453,7 @@ MonoBehaviour:
   ResetShakerValuesAfterShake: 1
   ResetTargetValuesAfterShake: 1
   RemapIntensityZero: 0
-  RemapIntensityOne: 1
+  RemapIntensityOne: 0.05
   Intensity:
     serializedVersion: 2
     m_Curve:
