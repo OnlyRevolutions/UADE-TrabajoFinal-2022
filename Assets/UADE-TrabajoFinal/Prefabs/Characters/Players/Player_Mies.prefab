@@ -9820,6 +9820,7 @@ GameObject:
   - component: {fileID: 114171358364461030}
   - component: {fileID: 114499223069276626}
   - component: {fileID: 4106815467903246205}
+  - component: {fileID: 2319256757283028779}
   m_Layer: 10
   m_Name: Player_Mies
   m_TagString: Player
@@ -10110,10 +10111,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   Cooldown:
     Unlimited: 0
-    ConsumptionDuration: 2
-    PauseOnEmptyDuration: 1
-    RefillDuration: 1
-    CanInterruptRefill: 1
+    ConsumptionDuration: 0
+    PauseOnEmptyDuration: 0
+    RefillDuration: 3
+    CanInterruptRefill: 0
     CooldownState: 0
     CurrentDurationLeft: 0
   InvincibleWhileDashing: 1
@@ -10374,6 +10375,19 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
+--- !u!114 &2319256757283028779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498750440386690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a45bd7228a66249a90280e57e10da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookRange: 15
 --- !u!1 &1561075265052736
 GameObject:
   m_ObjectHideFlags: 0

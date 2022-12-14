@@ -225,7 +225,7 @@ namespace MoreMountains.TopDownEngine
 		{
 			if ((GUIManager.HasInstance) && (_character.CharacterType == Character.CharacterTypes.Player))
 			{
-				GUIManager.Instance.UpdateDashBars(Cooldown.CurrentDurationLeft, 0f, Cooldown.ConsumptionDuration, _character.PlayerID);
+				GUIManager.Instance.UpdateDashBars(Cooldown.CurrentDurationLeft, 0f, Cooldown.RefillDuration, _character.PlayerID);
 			}
 		}
 
