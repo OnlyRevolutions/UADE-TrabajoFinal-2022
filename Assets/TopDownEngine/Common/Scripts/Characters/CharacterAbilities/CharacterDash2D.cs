@@ -77,6 +77,8 @@ namespace MoreMountains.TopDownEngine
 		protected int _dashingDirectionXAnimationParameter;
 		protected int _dashingDirectionYAnimationParameter;
 
+		public bool Dashing => _dashing;
+
 		/// <summary>
 		/// On init, we stop our particles, and initialize our dash bar
 		/// </summary>
