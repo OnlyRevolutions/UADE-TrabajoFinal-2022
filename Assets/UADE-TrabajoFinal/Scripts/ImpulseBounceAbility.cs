@@ -63,6 +63,14 @@ public class ImpulseBounceAbility : MonoBehaviour
         HandleAbility();
     }
 
+    private void FixedUpdate()
+    {
+        if (_usingAbility)
+        {
+            if (_rb.velocity.magnitude > 40f || _rb.velocity.magnitude < 35f) _rb.velocity = _rb.velocity.normalized * 40f;
+        }   
+    }
+
     public void StartImpulse()
     {
         if (_usingAbility || _characterDash.Dashing) return;
@@ -132,7 +140,8 @@ public class ImpulseBounceAbility : MonoBehaviour
             if (_impulseTimer < impulseDuration)
             {
                 _impulseTimer += Time.deltaTime;
-                if (_rb.velocity.magnitude > 5f) _rb.velocity = _rb.velocity.normalized * 5f;
+                Debug.Log(_rb.velocity.magnitude);
+                //if (_rb.velocity.magnitude > 40f) _rb.velocity = _rb.velocity.normalized * 40f;
                 //_controller.MovePosition((transform.position + _impulseDir));
                 
             }
