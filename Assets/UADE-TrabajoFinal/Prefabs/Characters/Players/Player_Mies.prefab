@@ -10396,7 +10396,7 @@ MonoBehaviour:
   impulseSpeed: 50
   manaUse: 100
   impulseDamage: 10
-  bouncyMat: {fileID: 0}
+  bouncyMat: {fileID: 6200000, guid: 3f9fe008a3af22f45ab77a849d57297f, type: 2}
 --- !u!114 &576867795378411115
 MonoBehaviour:
   m_ObjectHideFlags: 0
