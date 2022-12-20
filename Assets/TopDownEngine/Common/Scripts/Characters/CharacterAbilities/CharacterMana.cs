@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
-public class SpecialAbilityMana : MonoBehaviour
+
+public class CharacterMana : MonoBehaviour
 {
     float _currentMana;
     [SerializeField] float maxMana = 100;
-    MMProgressBar _bar;
+    [SerializeField] MMProgressBar _bar;
     void Start()
     {
         _currentMana = 0;
         _bar = GameObject.Find("SpecialBar").GetComponent<MMProgressBar>();
-
         _bar.UpdateBar(_currentMana, 0, maxMana);
     }
 

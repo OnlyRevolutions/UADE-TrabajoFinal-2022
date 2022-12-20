@@ -9821,6 +9821,7 @@ GameObject:
   - component: {fileID: 4106815467903246205}
   - component: {fileID: 3298370526239348759}
   - component: {fileID: 3411876612538329415}
+  - component: {fileID: 1803590289655497827}
   m_Layer: 10
   m_Name: Player_Ziggy
   m_TagString: Player
@@ -10322,7 +10323,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498750440386690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff2b4740e8311e042a6a323eb50805bd, type: 3}
   m_Name: 
@@ -10366,10 +10367,26 @@ MonoBehaviour:
   _abilityInput: 101
   _usingAbility: 0
   _character: {fileID: 114873785417298432}
+  _mana: {fileID: 0}
   _berserkFeedback: {fileID: 288508034868099008}
   _stopFeedback: {fileID: 6494307696059676908}
+  manaUse: 100
   _abilityTime: 3
   _abilityCooldown: 10
+--- !u!114 &1803590289655497827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498750440386690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab44a916413834f438af484e4e84bc42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMana: 100
+  _bar: {fileID: 0}
 --- !u!1 &1561075265052736
 GameObject:
   m_ObjectHideFlags: 0

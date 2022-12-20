@@ -4,7 +4,7 @@ using UnityEngine;
 using MoreMountains.TopDownEngine;
 using MoreMountains.Feedbacks;
 
-public class ImpulseBounceAbility : MonoBehaviour
+public class CharacterRicochet : MonoBehaviour
 {
     bool _usingAbility = false;
     Character _character;
@@ -16,7 +16,7 @@ public class ImpulseBounceAbility : MonoBehaviour
     Health _health;
     Rigidbody2D _rb;
     Collider2D _col;
-    SpecialAbilityMana _mana;
+    CharacterMana _mana;
 
     float _originalDrag;
     float _originalAngularDrag;
@@ -51,7 +51,7 @@ public class ImpulseBounceAbility : MonoBehaviour
         _orientation = _character?.FindAbility<CharacterOrientation2D>();
         _characterWeapon = _character?.FindAbility<CharacterHandleWeapon>();
         _health = _character.CharacterHealth;
-        _mana = GetComponent<SpecialAbilityMana>();
+        _mana = GetComponent<CharacterMana>();
 
         _originalAngularDrag = _rb.angularDrag;
         _originalDrag = _rb.drag;

@@ -12,9 +12,12 @@ public class CharacterBerserk : MonoBehaviour
     [SerializeField] private KeyCode _abilityInput = KeyCode.E;
     [SerializeField] private bool _usingAbility = false;
     [SerializeField] private Character _character;
+    [SerializeField] private CharacterMana _mana;
 
     [SerializeField] private MMFeedbacks _berserkFeedback;
     [SerializeField] private MMFeedbacks _stopFeedback;
+
+    [SerializeField] private float manaUse = 100;
 
     [SerializeField] private float _abilityTime;
     private float _originalAbilityTime;
@@ -52,7 +55,7 @@ public class CharacterBerserk : MonoBehaviour
     {
         if (_usingAbility == false && CanUseAbility)
         {
-            if (Input.GetKeyDown(_abilityInput))
+            if (Input.GetKeyDown(_abilityInput) && _mana.HasEnoughMana(manaUse))
             {
                 BerserkStart();
             }
@@ -91,6 +94,7 @@ public class CharacterBerserk : MonoBehaviour
         _clone = Instantiate(_clonePrefab, transform.position, Quaternion.identity);
         _characterRun.RunSpeed = _characterRun.RunSpeed * 2;
         _character.CharacterHealth.SetHealth(1);
+        _mana.UseMana(manaUse);
 
     }
 

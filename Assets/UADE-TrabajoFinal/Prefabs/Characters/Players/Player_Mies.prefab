@@ -10069,7 +10069,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498750440386690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2620d37890657743b0e0a1bfa4eea34, type: 3}
   m_Name: 
@@ -10386,17 +10386,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1498750440386690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5832cc8c402da04b9bef963f7c38800, type: 3}
+  m_Script: {fileID: 11500000, guid: b6a4a394ea8cea1468e65e04328b72b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HitDamageableFeedback: {fileID: 4854858575612429021}
   ImpulseFeedback: {fileID: 7826858593067185620}
   ImpulseEndFeedback: {fileID: 195694987547070132}
   impulseDuration: 3
-  impulseSpeed: 4
+  impulseSpeed: 50
   manaUse: 100
-  impulseDamage: 40
-  bouncyMat: {fileID: 6200000, guid: 3f9fe008a3af22f45ab77a849d57297f, type: 2}
+  impulseDamage: 10
+  bouncyMat: {fileID: 0}
 --- !u!114 &576867795378411115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10406,10 +10406,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1498750440386690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e3e043be0aa5ce4b93ff394e9986deb, type: 3}
+  m_Script: {fileID: 11500000, guid: ab44a916413834f438af484e4e84bc42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxMana: 100
+  _bar: {fileID: 0}
 --- !u!1 &1561075265052736
 GameObject:
   m_ObjectHideFlags: 0

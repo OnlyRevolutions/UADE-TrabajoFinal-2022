@@ -10209,7 +10209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98ac9df3b7906642be1f7d82b159530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 0}
+  manaToCharge: 10
 --- !u!1 &1732689920048540
 GameObject:
   m_ObjectHideFlags: 0

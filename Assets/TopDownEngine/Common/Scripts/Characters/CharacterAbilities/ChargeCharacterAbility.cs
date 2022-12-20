@@ -30,7 +30,7 @@ public class ChargeCharacterAbility : MonoBehaviour
     {
         if(health.gameObject.layer == 13) // Si es un enemigo
         {
-            owner.GetComponent<SpecialAbilityMana>()?.AddMana(manaToCharge);
+            owner.GetComponent<CharacterMana>()?.AddMana(manaToCharge);
         }
     }
 
