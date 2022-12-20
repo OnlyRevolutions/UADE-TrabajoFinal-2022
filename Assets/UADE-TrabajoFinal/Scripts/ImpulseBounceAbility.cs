@@ -16,6 +16,7 @@ public class ImpulseBounceAbility : MonoBehaviour
     Health _health;
     Rigidbody2D _rb;
     Collider2D _col;
+    SpecialAbilityMana _mana;
 
     float _originalDrag;
     float _originalAngularDrag;
@@ -23,10 +24,13 @@ public class ImpulseBounceAbility : MonoBehaviour
 
     public MMFeedbacks HitDamageableFeedback;
     public MMFeedbacks ImpulseFeedback;
+    public MMFeedbacks ImpulseEndFeedback;
 
     float _impulseTimer;
     public float impulseDuration = 3f;
     public float impulseSpeed = 50f;
+
+    public float manaUse = 100;
 
     public int impulseDamage = 10;
     [SerializeField] PhysicsMaterial2D bouncyMat;
@@ -47,6 +51,7 @@ public class ImpulseBounceAbility : MonoBehaviour
         _orientation = _character?.FindAbility<CharacterOrientation2D>();
         _characterWeapon = _character?.FindAbility<CharacterHandleWeapon>();
         _health = _character.CharacterHealth;
+        _mana = GetComponent<SpecialAbilityMana>();
 
         _originalAngularDrag = _rb.angularDrag;
         _originalDrag = _rb.drag;
@@ -59,7 +64,7 @@ public class ImpulseBounceAbility : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E)) StartImpulse();
+        if (Input.GetKeyDown(KeyCode.E) && _mana.HasEnoughMana(manaUse)) StartImpulse();
         HandleAbility();
     }
 
@@ -74,6 +79,7 @@ public class ImpulseBounceAbility : MonoBehaviour
     public void StartImpulse()
     {
         if (_usingAbility || _characterDash.Dashing) return;
+        _mana.UseMana(manaUse);
         _usingAbility = true;
         _health.DamageDisabled();
         _health.ImmuneToKnockback = true;
@@ -116,6 +122,7 @@ public class ImpulseBounceAbility : MonoBehaviour
         _col.sharedMaterial = null;
 
         ImpulseFeedback?.StopFeedbacks();
+        ImpulseEndFeedback?.PlayFeedbacks();
 
         _impulseDir = Vector3.zero;
         //_controller.SetKinematic(false);
@@ -166,7 +173,7 @@ public class ImpulseBounceAbility : MonoBehaviour
         {
             if(!colHealth.ImmuneToDamage)
             {
-                colHealth.Damage(impulseDamage, gameObject, 0.1f, 0.5f, Vector3.zero);
+                colHealth.Damage(impulseDamage, gameObject, 0.1f, 0.1f, Vector3.zero);
                 if (colHealth.gameObject.layer == 13)
                 {
                     HitDamageableFeedback?.PlayFeedbacks();

@@ -9954,6 +9954,7 @@ GameObject:
   - component: {fileID: 114589826025121120}
   - component: {fileID: 114960319110273974}
   - component: {fileID: 114971816358891350}
+  - component: {fileID: 8676747583792705699}
   m_Layer: 18
   m_Name: Projectile_Player_Revolver
   m_TagString: Untagged
@@ -10196,6 +10197,19 @@ MonoBehaviour:
   SkinWidth: 0.1
   RepositionRigidbodyIfHitTrigger: 1
   RepositionRigidbodyIfHitNonTrigger: 1
+--- !u!114 &8676747583792705699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579859513670320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98ac9df3b7906642be1f7d82b159530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
 --- !u!1 &1732689920048540
 GameObject:
   m_ObjectHideFlags: 0
