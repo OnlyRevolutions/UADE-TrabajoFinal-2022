@@ -9954,7 +9954,7 @@ GameObject:
   - component: {fileID: 114589826025121120}
   - component: {fileID: 114960319110273974}
   - component: {fileID: 114971816358891350}
-  - component: {fileID: 8676747583792705699}
+  - component: {fileID: 2259877021592725644}
   m_Layer: 18
   m_Name: Projectile_Player_Revolver
   m_TagString: Untagged
@@ -10197,7 +10197,7 @@ MonoBehaviour:
   SkinWidth: 0.1
   RepositionRigidbodyIfHitTrigger: 1
   RepositionRigidbodyIfHitNonTrigger: 1
---- !u!114 &8676747583792705699
+--- !u!114 &2259877021592725644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10206,7 +10206,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1579859513670320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98ac9df3b7906642be1f7d82b159530, type: 3}
+  m_Script: {fileID: 11500000, guid: f9fa3621268a3be4395fc7be33abeffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   manaToCharge: 10

@@ -4840,7 +4840,7 @@ GameObject:
   - component: {fileID: 114266039652667574}
   - component: {fileID: 114349735262243600}
   - component: {fileID: 114742650107379586}
-  - component: {fileID: -5750098325562355027}
+  - component: {fileID: 5050360694609100472}
   m_Layer: 18
   m_Name: Projectile_Player_AssaultRifle
   m_TagString: Untagged
@@ -5076,7 +5076,7 @@ MonoBehaviour:
   SkinWidth: 0.1
   RepositionRigidbodyIfHitTrigger: 1
   RepositionRigidbodyIfHitNonTrigger: 1
---- !u!114 &-5750098325562355027
+--- !u!114 &5050360694609100472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5085,7 +5085,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486318089921324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98ac9df3b7906642be1f7d82b159530, type: 3}
+  m_Script: {fileID: 11500000, guid: f9fa3621268a3be4395fc7be33abeffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   manaToCharge: 10
