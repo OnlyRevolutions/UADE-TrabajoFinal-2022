@@ -159,10 +159,12 @@ public class CharacterRicochet : MonoBehaviour
 
     public void OnDrawGizmos()
     {
+        /*
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + _characterWeapon.WeaponAimComponent.CurrentAim.normalized);
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, transform.position + _impulseDir * 3f);
+        */
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

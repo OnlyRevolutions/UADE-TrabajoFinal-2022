@@ -30,6 +30,7 @@ public class CharacterBerserk : MonoBehaviour
     private float _originalSpeed;
     private float _originalHealth;
 
+    //[SerializeField] private LayerMask _obstclesLayer;
     [SerializeField] private bool CanUseAbility => _abilityCooldown <= 0;
 
 
@@ -83,36 +84,37 @@ public class CharacterBerserk : MonoBehaviour
 
     private void BerserkStart()
     {
-        Debug.Log("Casting Ability.");
-        _berserkFeedback?.PlayFeedbacks();
-
         _usingAbility = true;
         _originalHealth = _character.CharacterHealth.CurrentHealth;
 
-        // Resets Ability Timer.
-        _abilityTime = _originalAbilityTime;
         _clone = Instantiate(_clonePrefab, transform.position, Quaternion.identity);
         _characterRun.RunSpeed = _characterRun.RunSpeed * 2;
         _character.CharacterHealth.SetHealth(1);
+
+        // Resets Ability Timer.
+        _abilityTime = _originalAbilityTime;
         _mana.UseMana(manaUse);
 
+        //Physics.IgnoreLayerCollision(_obstclesLayer.value, this.gameObject.layer, false);
+
+        _berserkFeedback?.PlayFeedbacks();
     }
 
     private void BerserkEnd()
     {
-        Debug.Log("Finished Ability.");
-        _berserkFeedback?.StopFeedbacks();
-        _stopFeedback?.PlayFeedbacks();
-
         _usingAbility = false;
         transform.position = _clone.transform.position;
         _character.CharacterHealth.SetHealth(_originalHealth);
+
+        //Physics.IgnoreLayerCollision(_obstclesLayer.value, this.gameObject.layer, true);
 
         // Resets Cooldown Timer.
         _abilityCooldown = _originalAbilityCooldown;
         _characterRun.RunSpeed = _originalSpeed;
 
+        _berserkFeedback?.StopFeedbacks();
+        _stopFeedback?.PlayFeedbacks();
+
         Destroy(_clone.gameObject);
-        //_stopFeedback?.StopFeedbacks();
     }
 }

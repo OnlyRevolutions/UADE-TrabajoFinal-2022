@@ -15,9 +15,12 @@ public class CharacterMana : MonoBehaviour
         _bar.UpdateBar(_currentMana, 0, maxMana);
     }
 
-    void Update()
+    private void Update()
     {
-        Debug.Log(_currentMana);
+        if (_bar == null)
+        {
+            _bar = GameObject.Find("SpecialBar").GetComponent<MMProgressBar>();
+        }
     }
 
     public void AddMana(float mana)
@@ -26,7 +29,7 @@ public class CharacterMana : MonoBehaviour
 
         if (_currentMana > maxMana) _currentMana = maxMana;
 
-        _bar.UpdateBar(_currentMana, 0, maxMana);
+        _bar?.UpdateBar(_currentMana, 0, maxMana);
     }
 
     public void UseMana(float mana)
@@ -35,7 +38,7 @@ public class CharacterMana : MonoBehaviour
 
         if (_currentMana < 0) _currentMana = 0;
 
-        _bar.UpdateBar(_currentMana, 0, maxMana);
+        _bar?.UpdateBar(_currentMana, 0, maxMana);
     }
 
     public bool HasEnoughMana(float manaToUse)
